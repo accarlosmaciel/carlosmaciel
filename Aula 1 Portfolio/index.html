@@ -4,55 +4,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Portfolio</title>
-
+    <title>Carlos Maciel | Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Background Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
 
-    <header>
-        <h1>Carlos Maciel</h1>
-        <p>Desenvolvedor Front-End Iniciante</p>
+    <!-- Navigation Navbar -->
+    <header class="navbar">
+        <div class="logo">CM.dev</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="sobre">
-        <h2>Sobre Mim</h2>
-        <p>
-            Olá! Meu nome é Carlos Maciel, estou aprendendo
-            HTML, CSS e JavaScript para criar sites modernos
-            e interativos.
-        </p>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="hero-subtitle">Disponível para novos projetos</span>
+                <h1>Olá, eu sou o <br><span class="gradient-text">Carlos Maciel</span></h1>
+                <p>Desenvolvedor Front-End Iniciante focado em criar páginas web modernas, responsivas e interativas com design elegante e código limpo.</p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-glow-circle"></div>
+                <div class="hero-profile-box">
+                    <div class="hero-profile-box-inner">
+                        <div class="hero-icon">💻</div>
+                        <span class="hero-badge">Front-End Developer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="projetos">
-        <h2>Meus Projetos</h2>
+        <!-- About Me Section -->
+        <section id="sobre" class="about">
+            <div class="section-header">
+                <span class="section-subtitle">Apresentação</span>
+                <h2 class="section-title">Sobre Mim</h2>
+            </div>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Olá! Meu nome é Carlos Maciel. Sou apaixonado por tecnologia e estou focado em aprender e dominar o desenvolvimento Front-End. Minha jornada começou com curiosidade e hoje dedico meu tempo para criar projetos utilizando HTML, CSS e JavaScript de forma consistente.</p>
+                    <p>Meu objetivo é criar sites modernos, rápidos e intuitivos, que proporcionem uma excelente experiência de uso em qualquer dispositivo. Estou constantemente estudando boas práticas de design e clean code.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-info">
+                            <h4>HTML5 / CSS3</h4>
+                            <p>Semântica & Estilização</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">⚡</div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <p>Lógica & Interatividade</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📱</div>
+                        <div class="skill-info">
+                            <h4>Design Responsivo</h4>
+                            <p>Mobile-First Layouts</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🛠️</div>
+                        <div class="skill-info">
+                            <h4>Git / GitHub</h4>
+                            <p>Controle de Versão</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">
-            <h3>Projeto 1</h3>
-            <p>Página simples usando HTML e CSS.</p>
-        </div>
+        <!-- Projects Section -->
+        <section id="projetos" class="projects">
+            <div class="section-header">
+                <span class="section-subtitle">Portfólio</span>
+                <h2 class="section-title">Meus Projetos</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-mockup">
+                        <div class="project-pattern">📊</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <h3>DevFinance</h3>
+                        <p>Uma aplicação simples de controle financeiro pessoal, onde é possível cadastrar entradas e saídas com cálculo de saldo em tempo real.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Visualizar ↗</a>
+                            <a href="#" class="project-link">Código Fonte ↗</a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="card">
-            <h3>Projeto 2</h3>
-            <p>Calculadora feita com JavaScript.</p>
-        </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-mockup">
+                        <div class="project-pattern project-pattern-2">🧮</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS Grid</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <h3>RocketCalc</h3>
+                        <p>Calculadora científica moderna construída com funções matemáticas avançadas, design responsivo com Grid e histórico de operações.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Visualizar ↗</a>
+                            <a href="#" class="project-link">Código Fonte ↗</a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="card">
-            <h3>Projeto 3</h3>
-            <p>Site responsivo para estudos.</p>
-        </div>
-    </section>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-mockup">
+                        <div class="project-pattern project-pattern-3">🎓</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>Flexbox</span>
+                            <span>Estudos</span>
+                        </div>
+                        <h3>StudyHub</h3>
+                        <p>Landing page moderna criada para uma plataforma de estudos online, focando em acessibilidade e otimização para dispositivos móveis.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Visualizar ↗</a>
+                            <a href="#" class="project-link">Código Fonte ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="contato">
-        <h2>Contato</h2>
+        <!-- Trajectory Section -->
+        <section id="trajetoria" class="trajectory">
+            <div class="section-header">
+                <span class="section-subtitle">Linha do Tempo</span>
+                <h2 class="section-title">Minha Trajetória</h2>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>O Início da Jornada</h3>
+                        <p>Decidi entrar no mundo do desenvolvimento web. Comecei aprendendo os fundamentos do HTML5 e estruturação de páginas estáticas simples.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Metade do Ano</span>
+                        <h3>Estilizando ideias com CSS3</h3>
+                        <p>Aprofundei meus estudos em layouts responsivos, dominando conceitos fundamentais como Flexbox, CSS Grid e design adaptável.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026</span>
+                        <h3>Adicionando Interatividade</h3>
+                        <p>Iniciei os estudos de JavaScript para tornar as páginas interativas. Aprendi sobre manipulação da DOM, eventos e funções básicas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Atualmente</span>
+                        <h3>Mentorias e Projetos Reais</h3>
+                        <p>Focado em mentorias práticas para construir um portfólio forte, dominar versionamento com Git/GitHub e melhores práticas de clean code.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <button onclick="mostrarMensagem()">
-            Clique para contato
-        </button>
+        <!-- Contact Section -->
+        <section id="contato" class="contact">
+            <div class="section-header">
+                <span class="section-subtitle">Diga Olá</span>
+                <h2 class="section-title">Contato</h2>
+            </div>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form" onsubmit="enviarMensagem(event)">
+                    <div class="form-group">
+                        <label for="name">Seu Nome</label>
+                        <input type="text" id="name" required placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Seu E-mail</label>
+                        <input type="email" id="email" required placeholder="exemplo@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-        <p id="mensagem"></p>
-    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Carlos Maciel. Desenvolvido com ❤️ para fins de estudo.</p>
+    </footer>
+
+    <!-- Toast Container for alerts -->
+    <div id="toast-container"></div>
 
     <script src="script.js"></script>
 </body>
