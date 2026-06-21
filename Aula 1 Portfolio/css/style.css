@@ -15,7 +15,7 @@
     --glass-border: rgba(255, 255, 255, 0.08);
     --card-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    
+
     --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     --gradient-accent: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
     --gradient-text: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
@@ -25,14 +25,17 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: var(--bg-primary);
 }
+
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom, var(--primary), var(--secondary));
     border-radius: 10px;
     border: 2px solid var(--bg-primary);
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to bottom, var(--secondary), var(--accent));
 }
@@ -479,23 +482,43 @@ header.navbar {
 
 /* Floating Animations for Badges */
 @keyframes float-badge-1 {
-    0% { transform: translateY(0) rotate(0deg); }
-    100% { transform: translateY(-15px) rotate(8deg); }
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-15px) rotate(8deg);
+    }
 }
 
 @keyframes float-badge-2 {
-    0% { transform: translateY(0) rotate(0deg); }
-    100% { transform: translateY(18px) rotate(-10deg); }
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(18px) rotate(-10deg);
+    }
 }
 
 @keyframes float-badge-3 {
-    0% { transform: translateY(0) rotate(0deg); }
-    100% { transform: translateY(-12px) rotate(-6deg); }
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-12px) rotate(-6deg);
+    }
 }
 
 @keyframes float-badge-4 {
-    0% { transform: translateY(0) rotate(0deg); }
-    100% { transform: translateY(15px) rotate(12deg); }
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(15px) rotate(12deg);
+    }
 }
 
 /* General Section Styling */
@@ -1185,10 +1208,12 @@ section {
         transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
     }
+
     70% {
         transform: scale(1);
         box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
     }
+
     100% {
         transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
